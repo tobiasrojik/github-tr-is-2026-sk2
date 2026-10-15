@@ -19,6 +19,20 @@ while(again.ToLower() == "a")
         Console.Write("Nezadali jste celé číslo,Zadejte prvni cislo (cele rady)");
     }
 
+    Console.WriteLine("Zadejte posledni cislo (cele rady)");
+    int last;
+    while(!int.TryParse(Console.ReadLine(), out last))
+    {
+        Console.Write("Nezadali jste celé číslo,Zadejte posledni cislo (cele rady)");
+    }
+
+    Console.Write("Zadejte diferenci (kladne cele cislo)");
+    int step;
+    while(!int.TryParse(Console.ReadLine(), out step) || step <= 0)
+    {
+        Console.Write("Diference musí být kladné celé číslo! zadejte znovu");
+    }
+
     Console.WriteLine();
     Console.WriteLine();  
     Console.WriteLine("Pro opakovani stisknete klavesu Enter");
