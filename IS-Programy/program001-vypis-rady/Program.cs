@@ -5,6 +5,10 @@ Console.WriteLine("!");
 string again = "a";
 while(again.ToLower() == "a")
 {
+    Console.Clear();
+    Console.WriteLine("************************************************");
+    Console.WriteLine("***************** Vypis řady *******************");
+    Console.WriteLine("************************************************");
     Console.WriteLine();
     Console.WriteLine();  
     Console.WriteLine("Pro opakovani stisknete klavesu Enter");
