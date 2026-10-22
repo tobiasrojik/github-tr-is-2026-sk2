@@ -52,7 +52,7 @@ while(again.ToLower() == "a")
     if (first <= last)
     {
         int current = first;
-        while(){
+        while(current < last){
             Console.WriteLine(current);
             current += step;
         }
