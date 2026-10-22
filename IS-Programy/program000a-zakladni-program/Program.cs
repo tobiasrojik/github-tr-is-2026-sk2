@@ -1,2 +1,36 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string again = "a";
+while(again.ToLower() == "a")
+{
+    Console.Clear();
+    Console.WriteLine("************************************************");
+    Console.WriteLine("***************** název programu *******************");
+    Console.WriteLine("************************************************");
+    Console.WriteLine("************************************************");
+    Console.WriteLine("**************** Tobiáš Rojík ******************");
+    Console.WriteLine("************************************************");¨
+
+
+    Console.WriteLine("Zadejte hodnotu a");
+    int aaa;
+    while(!int.TryParse(Console.ReadLine(), out aaa))
+    {
+        Console.Write("Nezadali jste celé číslo,Zadejte prvni cislo (cele rady)");
+    }
+
+    Console.Write("Zadejte hodnotu b");
+    int bbb;
+    while(!int.TryParse(Console.ReadLine(), out bbb) || bbb <= 0)
+    {
+        Console.Write("Diference musí být kladné celé číslo! zadejte znovu");
+    }
+
+
+
+    Console.WriteLine();
+    Console.WriteLine();  
+    Console.WriteLine("Pro opakovani stisknete klavesu Enter");
+    Console.WriteLine("jakoukoliv jinou ukoncite");
+    Console.WriteLine();
+    Console.Write("Chcete spustit znovu? : ");
+    again = Console.ReadLine() ?? "";      
+}
