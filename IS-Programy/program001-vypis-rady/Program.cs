@@ -9,6 +9,10 @@ while(again.ToLower() == "a")
     Console.WriteLine("************************************************");
     Console.WriteLine("***************** Vypis řady *******************");
     Console.WriteLine("************************************************");
+    Console.WriteLine("************************************************");
+    Console.WriteLine("**************** Tobiáš Rojík ******************");
+    Console.WriteLine("************************************************");
+
 
     //Console.WriteLine("Zadejte prvni cislo rady: ");
     //int first = int.Parse(Console.ReadLine());
@@ -32,6 +36,33 @@ while(again.ToLower() == "a")
     {
         Console.Write("Diference musí být kladné celé číslo! zadejte znovu");
     }
+
+
+    /*Console.WriteLine();
+    Console.WriteLine("========================================");
+    Console.WriteLine($"Prvni cislo: {first}");
+    Console.WriteLine($"Posledni cislo: {last}");
+    Console.WriteLine($"Diference: {step}");
+    Console.WriteLine("========================================");
+    Console.WriteLine();*/
+    Console.WriteLine($"Prvni cislo: {first};Poslední cislo: {last}; diference {step}");
+
+    //jadro algoritmu pro vypis rady
+    Console.WriteLine("Vypis řady");
+    if (first <= last)
+    {
+        int current = first;
+        while(){
+            Console.WriteLine(current);
+            current += step;
+        }
+    }
+    else
+    { 
+        Console.WriteLine("radu nelze vypsat");
+        Console.WriteLine("prvni cislo je vetsi nez posledni");
+    }
+      
 
     Console.WriteLine();
     Console.WriteLine();  
