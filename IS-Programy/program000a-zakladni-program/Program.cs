@@ -1,4 +1,8 @@
-﻿string again = "a";
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("!");
+// jako prvni si pripravime smycku pro opakovaní programu
+
+string again = "a";
 while(again.ToLower() == "a")
 {
     Console.Clear();
