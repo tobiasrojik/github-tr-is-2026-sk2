@@ -11,7 +11,7 @@ while(again.ToLower() == "a")
     Console.WriteLine("************************************************");
     Console.WriteLine("************************************************");
     Console.WriteLine("**************** Tobiáš Rojík ******************");
-    Console.WriteLine("************************************************");¨
+    Console.WriteLine("************************************************");
 
 
     Console.WriteLine("Zadejte hodnotu a");
