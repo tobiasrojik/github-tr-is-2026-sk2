@@ -1,0 +1,50 @@
+
+string again = "a";
+while (again.ToLower() == "a")
+{
+    Console.Clear();
+    Console.WriteLine("****************************************");
+    Console.WriteLine("************* Obdelnik *****************");
+    Console.WriteLine("****************************************");
+
+    Console.WriteLine("Zadejte sirku obdelniku (a):");
+    int a;
+    while (!int.TryParse(Console.ReadLine(), out a) || a <= 0)
+    {
+        Console.Write("Nezadali jste prirozene cislo, zadejte znovu: ");
+    }
+
+    Console.WriteLine("Zadejte vysku obdelniku (b):");
+    int b;
+    while (!int.TryParse(Console.ReadLine(), out b) || b <= 0)
+    {
+        Console.Write("Nezadali jste prirozene cislo, zadejte znovu: ");
+    }
+
+    // vykresleni obdelniku
+    Console.WriteLine();
+    Console.WriteLine("Vykresleny obdelnik:");
+
+    for (int i = 0; i < b; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+            Console.Write("* ");
+        }
+
+        Console.WriteLine();
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("Sirka obdelniku je: " + a);
+    Console.WriteLine("Vyska obdelniku je: " + b);
+
+    Console.WriteLine();
+    Console.WriteLine("Pro opakovani stisknete klavesu a");
+    Console.WriteLine("Jakoukoliv jinou ukoncite");
+    Console.WriteLine();
+    Console.Write("Chcete spustit znovu? : ");
+
+    again = Console.ReadLine() ?? "";
+}
+
