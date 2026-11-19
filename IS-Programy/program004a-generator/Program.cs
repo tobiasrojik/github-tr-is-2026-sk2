@@ -22,16 +22,16 @@ while(again.ToLower() == "a")
 
     // Zadání dolní meze
     Console.Write("Zadejte dolní mez: ");
-    int dolniMez;
-    while(!int.TryParse(Console.ReadLine(), out dolniMez))
+    int lowerBound;
+    while(!int.TryParse(Console.ReadLine(), out lowerBound))
     {
         Console.Write("Zadejte celé číslo: ");
     }
 
     // Zadání horní meze
     Console.Write("Zadejte horní mez: ");
-    int horniMez;
-    while(!int.TryParse(Console.ReadLine(), out horniMez) || horniMez < dolniMez)
+    int upperBound;
+    while(!int.TryParse(Console.ReadLine(), out upperBound) || upperBound < lowerBound)
     {
         Console.Write("Horní mez musí být větší nebo rovna dolní mezi. Zadejte znovu: ");
     }
@@ -45,7 +45,7 @@ while(again.ToLower() == "a")
     // Generování čísel
     for(int i = 0; i < pocet; i++)
     {
-        cisla[i] = nahoda.Next(dolniMez, horniMez + 1);
+        cisla[i] = nahoda.Next(lowerBound, upperBound + 1);
     }
 
     // Výpis čísel
